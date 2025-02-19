@@ -1,1 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Belanosima:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1E1E1E;
+}
+
+.page-title {
+	color: white;
+}
+
+.practice-problems {
+	display: inline-flex;
+	gap: 150px;
+}
+
+.similar-font,
+.find-grid,
+.style-choice {
+	width: 800px;
+	height: 800px;
+}
+
+.similar-font {
+	background-color: #3D3E61;
+	color: white;
+	font-family: "Lekton", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 100px;
+}
+
+.similar-font-headline {
+	font-family: "Belanosima", sans-serif;
+	font-weight: 600;
+	color: #FFBF43;
+	text-transform: uppercase;
+	font-size: 64px;
+	line-height: 1;
+}
+
+.find-grid {
+	background-color: #FFFFFF;
+	color: #003053;
+	font-family: "Crimson Text", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 100px;
+	display: grid;
+	/* inspect -> remove -> become correct, but instructions require display grid*/
+	grid-template-columns: repeat(8, 100px);
+	grid-template-rows: repeat(8, 100px);
+}
+
+.find-grid-headline {
+	font-family: "IBM Plex Mono", sans-serif;
+	font-weight: 700;
+	color: #003053;
+	font-style: normal;
+	text-transform: lowercase;
+	font-size: 64px;
+	line-height: 1;
+	grid-column: 2 / span 6;
+	grid-row-start: 3/ span 2;
+}
+
+.find-grid-content {
+	grid-column: 2 / span 6;
+	grid-row-start: 5 / span 2;
+	columns: 2;
+
+}
+
+.find-grid-content p {
+	break-inside: avoid;
+	margin-top: 0;
+
+}
+
+.style-choice {
+	background: url('../images/cream-paper.png') 0% 0% / 100px 100px repeat;
+	/* adjust color of image in background*/
+	color: #003053;
+	font-family: "Crimson Text", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 100px;
+
+}
+
+.content-container {
+	transform: rotate(-15deg);
+}
+
+.style-choice-headline {
+	font-family: "Arizonia", sans-serif;
+	font-weight: 400;
+	color: #003053;
+	font-style: normal;
+	font-size: 64px;
+	line-height: 1;
+	margin: 100px 0;
+}
