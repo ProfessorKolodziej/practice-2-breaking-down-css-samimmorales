@@ -72,8 +72,8 @@ body {
 }
 
 .find-grid-content {
-	grid-column: 2 / span 6;
-	grid-row: 5 / span 4;
+	grid-column: 1 / span 6;
+	grid-row: 3 / span 4;
 	columns: 2;
 
 }
